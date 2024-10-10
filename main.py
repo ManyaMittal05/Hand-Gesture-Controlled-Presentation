@@ -26,7 +26,7 @@ buttonPressed = False
 buttonCounter = 0
 buttonDelay = 40
 annotations = [[]]
-annotationNumber = -1
+annotationNumber = 0
 annotationStart = False
 
 #Hand detector
@@ -63,7 +63,7 @@ while True:
                     buttonPressed = True
                     imgNumber -= 1
                     annotations = [[]]
-                    annotationNumber = -1
+                    annotationNumber = 0
                     annotationStart = False
 
             #gesture 2 - Right
@@ -74,7 +74,7 @@ while True:
                     buttonPressed = True
                     imgNumber += 1
                     annotations = [[]]
-                    annotationNumber = -1
+                    annotationNumber = 0
 
         #geature 3 - Show Pointer
         if fingers == [0, 1, 1, 0, 0]:
